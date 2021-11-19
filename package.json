@@ -2,10 +2,10 @@
   "name": "userregistration",
   "version": "1.0.0",
   "description": "sample user registration",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "nodemon server",
-    "start": "nodemon server"
+    "serve": "nodemon --watch . server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
