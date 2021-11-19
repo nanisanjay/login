@@ -1,5 +1,6 @@
 const express=require('express')
 const app=express()
+const port = process.env.PORT || 9999
 const path=require('path')
 const mongoose=require('mongoose')
 var User=require('./models/register')
@@ -135,6 +136,6 @@ app.get('/search',async(req, res)=>
 // })
 
 
-app.listen(port=9999,(req,res)=>{
+app.listen(port,(req,res)=>{
     console.log("Server Started",port)
 })
